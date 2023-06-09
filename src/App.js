@@ -1,15 +1,16 @@
 import MyHeader from './components/MyHeader'
 import { Container } from 'react-bootstrap'
-import About from './components/About'
 import ProductList from './components/ProductList'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const App = () => {
   return (
-   <Container>
-     <MyHeader/>
-     <About/>
+    <Router>
+      <Container>
+        <MyHeader/>
      <ProductList/>
    </Container>
+    </Router>
   )
 }
 
